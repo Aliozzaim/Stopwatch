@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> stopwatch </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        html {}
+
+
+        .container {
+            background-color: rgba(230, 24, 24, 0.2);
+
+            margin-top: 15%;
+            height: 50vh;
+
+
+
+        }
+
+        .card {
+
+            background-color: coral;
+            text-align: center;
+            border: 1px solid rgb(134, 134, 134);
+
+
+        }
+
+        .button-wrapper {
+            text-align: center;
+
+        }
+
+        .stopButton {
+            margin: 0 25px;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            border: 2px solid white !important;
+            width: 140px;
+            height: 45px;
+            outline: none;
+
+        }
+
+        .watch {
+
+            font-size: 85px;
+        }
+
+        .card-header {
+            background-color: rgb(255, 166, 0);
+
+        }
+
+        .card-title {
+
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="card w-100 mt-3">
+                <div class="card-header">
+                    <h5 class="card-title">Stopwatch</h5>
+                </div>
+
+                <div id="button-wrapper" class="button-wrapper">
+                    <p class="watch"><span id="hours">00</span>:<span id="seconds">00</span>:<span id="tens">00</span>
+                    </p>
+                    <button id="startButton" type="submit" class="btn mt-4 ">
+                        Start</button>
+                    <button id="stopButton" type="submit" class="btn stopButton  mt-4">
+                        Stop</button>
+                    <button id="ResetButton" type="submit" class="btn  mt-4 ">
+                        Reset</button>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
